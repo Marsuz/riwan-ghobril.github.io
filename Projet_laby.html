@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Riwan GHOBRIL</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home page</a></li>
+							<li><a href="presentation.html">presentation Page</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.instagram.com/riwan_pic/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/Marsuz" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/riwan-ghobril/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></i>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+    <!-- Post -->
+    <section class="post">
+        <header class="major">
+            <h1>Recherche de chemin collaborative de robots dans un labyrinthe</h1>
+            <p>
+                Dans le cadre de mon projet d’ingénierie de 4ᵉ année, durant ma spécialisation en Électronique et Systèmes Embarqués, j’ai eu l’opportunité de travailler sur la programmation d’un robot basé sur Arduino pour résoudre un problème donné. Avec mon équipe, nous avons choisi de concevoir et programmer en C++ des robots Arduino capables de résoudre un labyrinthe tout en communiquant entre eux pour optimiser leurs déplacements.
+            </p>
+        </header>
+
+        <div class="image main"><img src="images/maze_robot.PNG" alt="" /></div>
+
+        <header>
+            <h2><a>Principe de fonctionnement</a></h2>
+        </header>
+        <p>
+            Notre approche reposait sur la collaboration entre deux robots. Le premier avait pour mission d’explorer et de cartographier le labyrinthe. Il suivait une logique d’exploration systématique fondée sur le chemin le plus long, enregistrant les impasses et revenant sur ses pas lorsqu’aucune issue n’était possible. En chemin, il enregistrait le nombre de rotations de roues effectuées sur chaque portion du trajet. Une fois le labyrinthe exploré, il optimisait son plan en éliminant les chemins menant à des impasses, avant de transmettre les instructions au second robot.
+
+            Le second robot recevait ces instructions via une socket TCP et s’en servait pour suivre aveuglément le chemin optimisé. Grâce aux données transmises, il savait précisément combien de rotations de roues effectuer pour traverser le labyrinthe, sans avoir besoin de capteurs de détection. Cela permettait d’accélérer considérablement la traversée.
+        </p>
+
+        <header>
+            <h2><a>Résultats et perspectives</a></h2>
+        </header>
+        <p>
+            Cette approche a donné des résultats concluants sur certains types de labyrinthes, permettant au second robot d’atteindre la sortie bien plus rapidement que s’il avait dû l’explorer lui-même. Cependant, nous avons également constaté des échecs sur d’autres configurations. Nous pensons que ces limites sont liées à notre méthode d’exploration par le chemin le plus long, qui ne garantit pas toujours une optimisation du parcours.
+
+            Ce projet a été une expérience enrichissante, combinant programmation embarquée, algorithmes de navigation et communication inter-robots. Il nous a permis d’approfondir nos compétences en robotique autonome et d’identifier des pistes d’amélioration pour rendre cette méthode plus robuste face à des labyrinthes plus complexes.
+        </p>
+    </section>
+</div>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
